@@ -110,7 +110,7 @@ rope4.display();
 }
 function keyPressed()
 {
-if(keyCode === UP_ARROW && k==1)
+if(keyCode === UP_ARROW)
 {
 	
    Matter.Body.applyForce(ball4.body,ball4.body.position,{x:5,y:-5});
