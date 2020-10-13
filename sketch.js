@@ -5,7 +5,7 @@ const Bodies = Matter.Bodies;
 const Body = Matter.Body;
 const Constraint = Matter.Constraint;
 const Render = Matter.Render;
-var k=1;
+
 var b4fwer,b2fwer,b3fwer,b5fwer;
 var a=500,b=300;
 function preload()
@@ -112,7 +112,7 @@ function keyPressed()
 {
 if(keyCode === UP_ARROW && k==1)
 {
-	k=1;
+	
    Matter.Body.applyForce(ball4.body,ball4.body.position,{x:5,y:-5});
 
 }
@@ -121,19 +121,8 @@ if(b4fwer.x > a)
 	keyCode = DOWN_ARROW
 	a=a-0.75;
 }
-if(a=460)
-{
-	k=2
-}
-else
-{
-	k=1
-}
-if(k==2)
-{
-	b=300;
-	a=500;
-}
+
+
 if(keyCode === DOWN_ARROW)
 {
 	
